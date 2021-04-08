@@ -26,10 +26,11 @@ public class HelloController {
     @ResponseBody
     public Todo[] SendTodoArray() {
 
-        Todo[] task = new Todo[5];
-        for(int i = 1; i<=5; i++) {
+        int numOfObject = 7;
+        Todo[] task = new Todo[numOfObject];
+        for(int i = 1; i<=numOfObject; i++) {
             task[i-1] = new Todo();
-            task[i-1].setId(i+6);
+            task[i-1].setId(i);
             task[i-1].setDone(false);
         }
         task[0].setText("프로젝트 생성하기");
@@ -37,6 +38,8 @@ public class HelloController {
         task[2].setText("Context 만들기");
         task[3].setText("기능 구현하기");
         task[4].setText("주원이 맞이하기");
+        task[5].setText("백에서 데이터 가져오기");
+        task[6].setText("디비 연동하기");
 
         return task;
     }
