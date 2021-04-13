@@ -147,7 +147,6 @@
     ],
     "resetMocks": true
   },
-  "proxy": "http//localhost:8080",
   "babel": {
     "presets": [
       "react-app"

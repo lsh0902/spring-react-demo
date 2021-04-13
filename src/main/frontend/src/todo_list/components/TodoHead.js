@@ -29,6 +29,7 @@ const TodoHeadBlock = styled.div`
 
 function TodoHead() {
   const todos = useTodoState();
+  console.log(todos);
   const undone = todos.filter(todo => !todo.done);
 
   const today = new Date();
